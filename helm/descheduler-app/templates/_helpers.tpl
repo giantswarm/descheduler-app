@@ -16,8 +16,6 @@ app.kubernetes.io/instance: {{ .Release.Name | quote }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 giantswarm.io/service-type: "{{ .Values.serviceType }}"
 helm.sh/chart: {{ include "chart" . | quote }}
-kubernetes.io/cluster-service: "true"
-kubernetes.io/name: "KubeDNSUpstream"
 {{- end -}}
 
 {{/*
