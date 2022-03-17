@@ -12,6 +12,36 @@ image:
 
 schedule: "*/5 * * * *"
 
+deschedulerPolicy:
+  # maxNoOfPodsToEvictPerNode: 10
+  # maxNoOfPodsToEvictPerNamespace: 10
+  # ignorePvcPods: true
+  # evictLocalStoragePods: true
+  strategies:
+    RemoveDuplicates:
+      enabled: true
+    RemovePodsViolatingNodeTaints:
+      enabled: true
+    RemovePodsViolatingNodeAffinity:
+      enabled: true
+      params:
+        nodeAffinityType:
+        - requiredDuringSchedulingIgnoredDuringExecution
+    RemovePodsViolatingInterPodAntiAffinity:
+      enabled: true
+    LowNodeUtilization:
+      enabled: true
+      params:
+        nodeResourceUtilizationThresholds:
+          thresholds:
+            cpu: 20
+            memory: 20
+            pods: 20
+          targetThresholds:
+            cpu: 50
+            memory: 50
+            pods: 50
+
 resources:
   requests:
     cpu: 500m
