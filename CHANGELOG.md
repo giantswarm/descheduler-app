@@ -7,8 +7,11 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+## [0.21.0-gs1] - 2022-03-17
+
 ### Added
 
 - Initial commit with upstream release v0.21.0.
 
-[Unreleased]: https://github.com/giantswarm/azure-cloud-node-manager-app/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/descheduler-app/compare/v0.21.0-gs1...HEAD
+[0.21.0-gs1]: https://github.com/giantswarm/descheduler-app/compare/v0.0.0...v0.21.0-gs1
