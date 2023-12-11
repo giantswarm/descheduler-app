@@ -8,3 +8,5 @@ restrictions:
   clusterSingleton: true
   fixedNamespace: kube-system
   gpuInstances: false
+annotations:
+  application.giantswarm.io/team: phoenix
