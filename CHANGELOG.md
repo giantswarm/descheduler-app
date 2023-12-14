@@ -7,6 +7,10 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+### Added
+
+- Add team label in resources.
+
 ## [0.21.0-gs1] - 2022-03-17
 
 ### Added
