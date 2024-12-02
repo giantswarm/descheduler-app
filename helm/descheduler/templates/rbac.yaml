@@ -9,11 +9,11 @@ metadata:
 {{- if .Values.serviceAccount.annotations }}
   annotations: {{ toYaml .Values.serviceAccount.annotations | nindent 4 }}
 {{- end }}
----
 {{- end -}}
-{{- if .Values.rbac.create -}}
-kind: ClusterRole
+{{- if .Values.rbac.create }}
+---
 apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
 metadata:
   name: {{ template "descheduler.fullname" . }}
   labels:
