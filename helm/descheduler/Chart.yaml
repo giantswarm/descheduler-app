@@ -2,6 +2,7 @@ apiVersion: v1
 appVersion: v1.0.0
 description: Descheduler for Kubernetes is used to rebalance clusters by evicting pods that can potentially be scheduled on better nodes. In the current implementation, descheduler does not schedule replacement of evicted pods but relies on the default scheduler for that.
 home: https://github.com/giantswarm/descheduler-app
+icon: https://s.giantswarm.io/app-icons/1/png/k8s-initiator-app-light.png
 name: descheduler
 version: "0.30.1"
 restrictions:
