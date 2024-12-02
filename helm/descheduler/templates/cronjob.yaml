@@ -89,6 +89,9 @@ spec:
                 {{- end }}
               livenessProbe:
                 {{- toYaml .Values.livenessProbe | nindent 16 }}
+              ports:
+                - containerPort: 10258
+                  protocol: TCP
               resources:
                 {{- toYaml .Values.resources | nindent 16 }}
               {{- if .Values.securityContext }}
