@@ -1,0 +1,39 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: {{ template "descheduler.fullname" . }}
+  namespace: {{ include "descheduler.namespace" . }}
+  labels:
+    {{- include "descheduler.labels" . | nindent 4 }}
+spec:
+  podSelector:
+    matchLabels:
+    {{- include "descheduler.selectorLabels" . | nindent 6 }}
+  ingress:
+  - {}
+  egress:
+  - {}
+  policyTypes:
+  - Egress
+---
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: {{ template "descheduler.fullname" . }}
+  namespace: {{ include "descheduler.namespace" . }}
+  labels:
+    {{- include "descheduler.labels" . | nindent 4 }}
+spec:
+  endpointSelector:
+    matchLabels:
+    {{- include "descheduler.selectorLabels" . | nindent 6 }}
+  egress:
+    - toEntities:
+        - world
+    - toPorts:
+        - ports:
+            - port: "443"
+              protocol: TCP
+  ingress:
+    - fromEntities:
+        - world
