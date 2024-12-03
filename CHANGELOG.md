@@ -7,9 +7,12 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+## [1.0.0] - 2024-12-03
+
 ### Added
 
 - Add team label in resources.
+- Update from upstream 0.31.0
 
 ## [0.21.0-gs1] - 2022-03-17
 
@@ -17,5 +20,6 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 - Initial commit with upstream release v0.21.0.
 
-[Unreleased]: https://github.com/giantswarm/descheduler-app/compare/v0.21.0-gs1...HEAD
+[Unreleased]: https://github.com/giantswarm/descheduler-app/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/giantswarm/descheduler-app/compare/v0.21.0-gs1...v1.0.0
 [0.21.0-gs1]: https://github.com/giantswarm/descheduler-app/compare/v0.0.0...v0.21.0-gs1
