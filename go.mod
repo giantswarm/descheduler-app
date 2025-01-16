@@ -9,5 +9,5 @@ require (
 	github.com/giantswarm/backoff v1.0.1
 	github.com/giantswarm/microerror v0.4.1
 	github.com/giantswarm/micrologger v1.1.2
-	k8s.io/apimachinery v0.32.0
+	k8s.io/apimachinery v0.32.1
 )
