@@ -2,7 +2,7 @@ module github.com/giantswarm/descheduler-app
 
 go 1.23.0
 
-toolchain go1.23.4
+toolchain go1.23.5
 
 require (
 	github.com/giantswarm/apptest v1.4.1
