@@ -9,6 +9,10 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [1.0.1] - 2025-05-27
 
+### Changed
+
+- Update deps.
+
 ## [1.0.0] - 2024-12-03
 
 ### Added
