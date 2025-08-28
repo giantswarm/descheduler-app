@@ -7,6 +7,12 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-08-28
+
+### Changed
+
+- Load container image from gsoci.azurecr.io by default
+
 ## [1.0.1] - 2025-05-27
 
 ### Changed
@@ -26,7 +32,8 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 - Initial commit with upstream release v0.21.0.
 
-[Unreleased]: https://github.com/giantswarm/descheduler-app/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/giantswarm/descheduler-app/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/giantswarm/descheduler-app/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/giantswarm/descheduler-app/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/giantswarm/descheduler-app/compare/v0.21.0-gs1...v1.0.0
 [0.21.0-gs1]: https://github.com/giantswarm/descheduler-app/compare/v0.0.0...v0.21.0-gs1

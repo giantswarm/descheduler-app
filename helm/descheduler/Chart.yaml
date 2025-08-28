@@ -4,7 +4,7 @@ description: Descheduler for Kubernetes is used to rebalance clusters by evictin
 home: https://github.com/giantswarm/descheduler-app
 icon: https://s.giantswarm.io/app-icons/1/png/k8s-initiator-app-light.png
 name: descheduler
-version: "1.0.1"
+version: "1.0.2"
 restrictions:
   clusterSingleton: true
   fixedNamespace: kube-system
