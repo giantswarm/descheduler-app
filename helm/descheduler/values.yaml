@@ -9,7 +9,7 @@ name: descheduler
 serviceType: managed
 
 image:
-  registry: quay.io
+  registry: gsoci.azurecr.io
   name: giantswarm/descheduler
   tag: v0.31.0
 
